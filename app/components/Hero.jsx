@@ -48,7 +48,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`relative mt-16 px-3 w-full h-[460px] flex items-center flex-col gap-10 justify-center 
+      className={`relative mt-16 px-3 w-full h-[400px] flex items-center flex-col gap-10 justify-center 
               bg-black/70 bg-blend-darken transition-all duration-1000 ease-in-out`}
       style={{
         backgroundImage: `url(${heroContent[index].image})`,
