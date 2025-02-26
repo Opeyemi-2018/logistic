@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
@@ -14,10 +14,10 @@ const Hero = () => {
       image: "/images/log-3.jpg",
       title: "Multi-Mode Transportation Services",
       description:
-        "From road to air, sea, and rail – we ensure your goods reach their destination safely and on time.",
+        "From road  sea, and rail – we ensure your goods reach their destination safely and on time.",
     },
     {
-      image: "/images/log-5.jpg",
+      image: "/images/warehouse.jpg",
       title: "Secure Warehousing & Distribution",
       description:
         "State-of-the-art storage facilities with real-time tracking and inventory management.",
@@ -29,7 +29,7 @@ const Hero = () => {
         "Connecting businesses worldwide with seamless import and export solutions.",
     },
     {
-      image: "/images/log-8.jpg",
+      image: "/images/log-7.jpg",
       title: "Express Courier & Last-Mile Delivery",
       description:
         "Fast, reliable, and secure parcel delivery services for businesses and individuals.",
@@ -48,29 +48,29 @@ const Hero = () => {
 
   return (
     <div
-      className={`relative mt-16 px-3 w-full h-[400px] flex items-center flex-col gap-10 justify-center 
-              bg-black/70 bg-blend-darken transition-all duration-1000 ease-in-out`}
+      className="relative mt-16 px-3 w-full h-[400px] flex items-center flex-col gap-10 justify-center
+                 bg-black/70 bg-blend-darken transition-all duration-1000 ease-in-out overflow-hidden"
       style={{
         backgroundImage: `url(${heroContent[index].image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <motion.div
-        key={index}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 1 }}
-        className="text-center text-white "
-      >
-        <div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={index}
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: "-100%", opacity: 0 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="text-center text-white absolute w-full px-4"
+        >
           <h1 className="text-3xl lg:text-6xl font-bold px-2">
             {heroContent[index].title}
           </h1>
           <p className="text-lg mt-4">{heroContent[index].description}</p>
-        </div>
-      </motion.div>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };
