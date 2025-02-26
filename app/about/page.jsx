@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import Count from "../components/Count";
 import { FaNetworkWired } from "react-icons/fa";
+import Contact from "../components/Contact";
 
 const About = () => {
   const ref = useRef(null);
@@ -35,11 +36,13 @@ const About = () => {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           className="md:w-1/2 text-[20px]"
         >
-          We are a comprehensive logistics and travel solutions provider,
-          dedicated to facilitating seamless movement of goods and people across
-          Nigeria and the globe. Our diverse range of services is built on a
-          foundation of reliability, efficiency, and a commitment to exceeding
-          our clients' expectations.
+          Delak Global Synergy is a dynamic company dedicated to providing
+          top-tier logistics, visa processing, and marketing solutions. With a
+          strong commitment to efficiency, reliability, and customer
+          satisfaction, we bridge global connections, helping individuals and
+          businesses thrive. Our logistics division ensures seamless
+          transportation of goods, offering secure, timely, and cost-effective
+          solutions across various industries.
         </motion.p>
         <motion.div
           initial={{ x: "100%", opacity: 0 }}
@@ -67,8 +70,13 @@ const About = () => {
               Our Mission
             </p>
             <p>
-              To provide reliable, efficient, and innovative logistics and
-              travel solutions that empower our clients to achieve their goals.
+              At Delak Global Synergy, our mission is to provide innovative,
+              reliable, and seamless solutions in logistics, visa processing,
+              and marketing. We are committed to delivering efficient
+              transportation, hassle-free travel documentation, and
+              result-driven marketing strategies that empower businesses and
+              individuals to achieve their goals effortlessly. Through
+              excellence, and professionalism.
             </p>
           </div>
 
@@ -77,16 +85,22 @@ const About = () => {
               Our Vision
             </p>
             <p>
-              To be a leading force in the logistics and travel industry,
-              recognized for our commitment to excellence and customer
-              satisfaction.
+              Our vision is to be a leading force in logistics, travel
+              solutions, and marketing services, recognized for our dedication
+              to efficiency, integrity, and customer satisfaction. We strive to
+              set new standards in global trade, seamless travel facilitation,
+              and impactful brand growth, ensuring that businesses and
+              individuals can navigate the world with confidence and ease.
             </p>
           </div>
         </div>
       </div>
 
-      <div>
+      <div className="md:my-20 my-5">
         <Count />
+      </div>
+      <div className="md:mt-10 mt-5">
+        <Contact />
       </div>
     </div>
   );
