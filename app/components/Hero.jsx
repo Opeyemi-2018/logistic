@@ -11,16 +11,22 @@ const Hero = () => {
         "Seamless transportation, warehousing, and distribution services tailored to meet your business needs.",
     },
     {
-      image: "/images/log-3.jpg",
-      title: "Multi-Mode Transportation Services",
+      image: "/images/marketing.jpg",
+      title: "Marketing and Advertising",
       description:
-        "From road  sea, and rail – we ensure your goods reach their destination safely and on time.",
+        "Providing advertising, marketing, distribution, and sales of goods and machinery, both locally and globally, to expand market reach and business growth.",
     },
     {
       image: "/images/warehouse.jpg",
       title: "Secure Warehousing & Distribution",
       description:
         "State-of-the-art storage facilities with real-time tracking and inventory management.",
+    },
+    {
+      image: "/images/visa.jpg",
+      title: "Travel and Tour Operations",
+      description:
+        "Offering tour packages, visa services, ticket booking for airlines, ships, and railways, along with sightseeing and travel assistance for both local and international clients.",
     },
     {
       image: "/images/log-6.jpg",

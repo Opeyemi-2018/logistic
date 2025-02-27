@@ -14,9 +14,14 @@ const faqs = [
       "Yes, we provide international shipping services with customs clearance support to ensure smooth deliveries across borders.",
   },
   {
-    question: "What are the delivery timeframes?",
+    question: " How can your marketing services help my business ?",
     answer:
-      "Delivery times vary based on destination and shipping method, with options for same-day, next-day, and standard delivery.",
+      "We boost brand visibility, attract the right audience, and drive growth through strategic advertising and digital marketing.",
+  },
+  {
+    question: "What types of visas do you assist with?",
+    answer:
+      "We handle tourist, business, work, student, and transit visas, ensuring a smooth application process.",
   },
   {
     question: "How do I contact customer support?",

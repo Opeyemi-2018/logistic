@@ -14,7 +14,7 @@ const Header = () => {
         <div className="max-w-6xl mx-auto px-3  flex items-center justify-between">
           <Link href={"/"}>
             <Image
-              src="/images/delak.png"
+              src="/images/delak-logo.jpeg"
               alt="Delak Logo"
               width={65}
               height={65}

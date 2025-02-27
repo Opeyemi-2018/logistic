@@ -8,13 +8,13 @@ const Solution = () => {
           OUR SOLUTION
         </h1>
         <p className="text-[19px]">
-          Delak Global Synergy provides fast, reliable, and secure logistics
-          solutions, including freight and cargo transportation by land, sea.
-          secure warehousing with real-time inventory tracking, express delivery
-          services with same-day and next-day shipping, seamless global
-          logistics with customs clearance, real-time tracking for shipments,
-          and scalable e-commerce and corporate logistics solutions, ensuring
-          excellence in every step of the supply chain.
+          Delak Global Synergy offers comprehensive logistics, travel, and visa
+          solutions, specializing in cargo and passenger transportation,
+          warehousing, import/export, freight forwarding, tourism, courier
+          services, marketing, and money exchange. With a commitment to
+          efficiency and reliability, they facilitate seamless trade, travel,
+          and mobility, ensuring smooth operations for businesses and
+          individuals across local and international markets. 🚀
         </p>
       </div>
     </div>

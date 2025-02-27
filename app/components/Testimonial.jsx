@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     name: "Sarah Smith",
-    text: "Fast and reliable delivery. My goods arrived safely and on time.",
+    text: " Their marketing expertise helped us expand our brand.",
     image: "/images/log-man.jpg",
   },
   {
@@ -23,7 +23,8 @@ const testimonials = [
   },
   {
     name: "Emily Davis",
-    text: "A trustworthy logistics partner for my business. Great experience!",
+    text:
+      "Their strategic approach, professionalism, and innovative solutions set them apart from others in the industry",
     image: "/images/log-man.jpg",
   },
   {
@@ -58,7 +59,11 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden bg-green-950 py-10">
+    <div
+      className="bg-green-900 bg-blend-multiply bg-cover bg-center md:py-8 py-3"
+      style={{ backgroundImage: "url('/images/log-2.jpg')" }}
+    >
+      {" "}
       <div className="max-w-6xl mx-auto px-3">
         <h2 className="text-center text-white text-3xl font-bold mb-6">
           What Our Clients Say
