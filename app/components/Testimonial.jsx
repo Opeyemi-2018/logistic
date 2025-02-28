@@ -1,7 +1,5 @@
 "use client";
-import { useRef, useEffect } from "react";
 import Image from "next/image";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // Testimonial data
 const testimonials = [
@@ -36,31 +34,9 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
-  const sliderRef = useRef(null);
-
-  useEffect(() => {
-    const slider = sliderRef.current;
-
-    let scrollAmount = 0;
-    const speed = 1;
-
-    const scroll = () => {
-      if (slider) {
-        scrollAmount += speed;
-        if (scrollAmount >= slider.scrollWidth / 2) {
-          scrollAmount = 0; // Reset scroll to loop
-        }
-        slider.style.transform = `translateX(-${scrollAmount}px)`;
-      }
-      requestAnimationFrame(scroll);
-    };
-
-    scroll();
-  }, []);
-
   return (
     <div
-      className="bg-green-900 bg-blend-multiply bg-cover bg-center md:py-8 py-3"
+      className="bg-green-900 bg-blend-multiply bg-cover bg-center md:py-8 py-3 overflow-hidden"
       style={{ backgroundImage: "url('/images/log-2.jpg')" }}
     >
       {" "}
@@ -69,14 +45,11 @@ const Testimonial = () => {
           What Our Clients Say
         </h2>
         <div className="w-full overflow-hidden">
-          <div
-            ref={sliderRef}
-            className="flex w-max gap-6 transition-transform duration-300 ease-linear"
-          >
+          <div className="flex w-max gap-6  animate-scroll">
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div
                 key={index}
-                className="w-80 max-w-xs text-gray-800 bg-white p-4 border border-gray-300 rounded-md shadow-md text-center overflow-hidden"
+                className="w-96 max-w-xs text-gray-800 bg-white p-4 border border-gray-300 rounded-md shadow-md text-center whitespace-normal"
               >
                 <Image
                   src={testimonial.image}
@@ -92,6 +65,21 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        @keyframes scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-scroll {
+          display: flex;
+          white-space: nowrap;
+          animation: scroll 20s linear infinite;
+        }
+      `}</style>
     </div>
   );
 };

@@ -2,9 +2,9 @@
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import Count from "../components/Count";
+import Count from "../../components/Count";
 import { FaNetworkWired } from "react-icons/fa";
-import Contact from "../components/Contact";
+import Contact from "../../components/Contact";
 
 const About = () => {
   const ref = useRef(null);
@@ -14,7 +14,7 @@ const About = () => {
     <div className="min-h-screen">
       <div
         className="relative  px-3 w-full md:h-[300px] h-[200px] 
-                 bg-black/80 bg-blend-darken transition-all duration-1000 ease-in-out overflow-hidden"
+                 bg-green-900 bg-blend-multiply bg-cover bg-center transition-all duration-1000 ease-in-out overflow-hidden"
         style={{
           backgroundImage: `url(/images/log-11.jpg)`,
           backgroundSize: "cover",
@@ -36,13 +36,13 @@ const About = () => {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           className="md:w-1/2 text-[20px]"
         >
-          Delak Global Synergy is a dynamic company dedicated to providing
-          top-tier logistics, visa processing, and marketing solutions. With a
-          strong commitment to efficiency, reliability, and customer
-          satisfaction, we bridge global connections, helping individuals and
-          businesses thrive. Our logistics division ensures seamless
-          transportation of goods, offering secure, timely, and cost-effective
-          solutions across various industries.
+          <span className="font-bold"> Delak Global Synergy</span> is a dynamic
+          company dedicated to providing top-tier logistics, visa processing,
+          and marketing solutions. With a strong commitment to efficiency,
+          reliability, and customer satisfaction, we bridge global connections,
+          helping individuals and businesses thrive. Our logistics division
+          ensures seamless transportation of goods, offering secure, timely, and
+          cost-effective solutions across various industries.
         </motion.p>
         <motion.div
           initial={{ x: "100%", opacity: 0 }}

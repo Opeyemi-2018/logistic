@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="max-w-6xl mx-auto flex  md:flex-row flex-col gap-4 my-8">
       <div className="md:px-0 px-3">
-        <h1 className="sm:text-2xl text-1xl font-semibold capitalize">
+        <h1 className="sm:text-2xl text-1xl font-bold underline text-green-700 capitalize">
           get in touch with us
         </h1>
         <p className="text-gray-600 mb-2">

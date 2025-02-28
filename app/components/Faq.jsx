@@ -26,7 +26,13 @@ const faqs = [
   {
     question: "How do I contact customer support?",
     answer:
-      "You can reach our support team via phone, email, or live chat on our website for assistance with your shipments.",
+      "You can reach our support team via phone, email, or live chat on our website for assistance.",
+  },
+  {
+    question:
+      "Does Delak Global Synergy offer local and international distribution and sales of goods?",
+    answer:
+      "Yes, we specialize in the local and international distribution and sales of goods, ensuring seamless logistics.",
   },
 ];
 
