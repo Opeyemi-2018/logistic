@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="max-w-6xl mx-auto flex  md:flex-row flex-col gap-4 my-8">
       <div className="md:px-0 px-3">
-        <h1 className="sm:text-2xl text-1xl font-bold underline text-green-700 capitalize">
+        <h1 className="sm:text-2xl text-1xl font-bold underline text-green-800 capitalize">
           get in touch with us
         </h1>
         <p className="text-gray-600 mb-2">
@@ -17,7 +17,7 @@ const Contact = () => {
           <span>
             <HiOutlineLocationMarker
               size={30}
-              className="text-green-600 bg-gray-100 p-2 rounded-full"
+              className="text-green-800 bg-gray-100 p-2 rounded-full"
             />
           </span>
           <div>
@@ -31,7 +31,7 @@ const Contact = () => {
           <span>
             <FaRegEnvelope
               size={30}
-              className="text-green-950 bg-gray-100 p-2 rounded-full"
+              className="text-green-800 bg-gray-100 p-2 rounded-full"
             />
           </span>
           <div>
@@ -45,7 +45,7 @@ const Contact = () => {
           <span>
             <MdOutlineLocalPhone
               size={30}
-              className="text-green-950 bg-gray-100 p-2 rounded-full"
+              className="text-green-800 bg-gray-100 p-2 rounded-full"
             />
           </span>
           <div>

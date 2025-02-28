@@ -57,9 +57,9 @@ const Faq = () => {
             >
               {faq.question}
               {openIndex === index ? (
-                <FaMinus size={18} className="text-green-600" />
+                <FaMinus size={18} className="text-green-800" />
               ) : (
-                <FaPlus size={18} className="text-green-600" />
+                <FaPlus size={18} className="text-green-800" />
               )}
             </button>
             {openIndex === index && (
