@@ -70,7 +70,7 @@ const OurService = () => {
         <div className="relative border-l-4 border-green-800">
           {services.map((service, index) => (
             <div key={index} className="ml-6 mb-10">
-              <div className="absolute -left-3 w-6 h-6 bg-green-500 rounded-full"></div>
+              <div className="absolute -left-3 w-6 h-6 bg-green-800 rounded-full"></div>
               <div className="flex md:flex-row items-center flex-col md:gap-8 gap-2">
                 <div>
                   <Image

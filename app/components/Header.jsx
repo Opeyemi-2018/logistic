@@ -80,13 +80,13 @@ const Header = () => {
           <nav>
             <ul className="flex flex-col gap-4 text-[18px]">
               <Link href="/page/ourservice" className="text-2xl">
-                service
+                Service
               </Link>
               <Link href="/page/about" className="text-2xl">
-                about us
+                About us
               </Link>
               <Link href="/page/blog" className="text-2xl">
-                blog
+                Blog
               </Link>
             </ul>
           </nav>
