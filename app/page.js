@@ -5,6 +5,7 @@ import Testimonial from "./components/Testimonial";
 import Faq from "./components/Faq";
 import Solution from "./components/Solution";
 import Count from "./components/Count";
+import NewsLetter from "./components/NewsLetter";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Testimonial />
       <Count />
       <Faq />
+      <NewsLetter />
     </div>
   );
 };

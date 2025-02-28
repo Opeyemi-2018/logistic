@@ -1,5 +1,6 @@
 import Contact from "@/app/components/Contact";
 import Count from "@/app/components/Count";
+import NewsLetter from "@/app/components/NewsLetter";
 import Image from "next/image";
 
 const services = [
@@ -98,6 +99,8 @@ const OurService = () => {
       <div className="md:mt-10 mt-5">
         <Contact />
       </div>
+
+      <NewsLetter />
     </div>
   );
 };

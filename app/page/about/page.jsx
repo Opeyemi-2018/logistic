@@ -3,8 +3,8 @@ import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import Count from "../../components/Count";
-import { FaNetworkWired } from "react-icons/fa";
 import Contact from "../../components/Contact";
+import NewsLetter from "@/app/components/NewsLetter";
 
 const About = () => {
   const ref = useRef(null);
@@ -102,6 +102,8 @@ const About = () => {
       <div className="md:mt-10 mt-5">
         <Contact />
       </div>
+
+      <NewsLetter />
     </div>
   );
 };
