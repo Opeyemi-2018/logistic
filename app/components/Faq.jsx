@@ -29,8 +29,7 @@ const faqs = [
       "You can reach our support team via phone, email, or live chat on our website for assistance.",
   },
   {
-    question:
-      "Does Delak Global Synergy offer local and international distribution and sales of goods?",
+    question: "Is Delak into sales and distribution ?",
     answer:
       "Yes, we specialize in the local and international distribution and sales of goods, ensuring seamless logistics.",
   },

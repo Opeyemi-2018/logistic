@@ -28,8 +28,14 @@ const Header = () => {
           <nav>
             <ul className="md:flex hidden items-center cursor-pointer justify-between md:gap-6 gap-5 text-[18px]">
               <Link
+                href="/"
+                className={`font-semibold text-[17px] text-gray-600`}
+              >
+                Home
+              </Link>
+              <Link
                 href="/page/ourservice"
-                className={`font-semibold text-2xl text-gray-600 ${
+                className={`font-semibold text-[17px] text-gray-600 ${
                   pathName === "/page/ourservice"
                     ? "text-green-800 font-bold underline"
                     : ""
@@ -39,7 +45,7 @@ const Header = () => {
               </Link>
               <Link
                 href="/page/about"
-                className={`font-semibold text-2xl text-gray-600 ${
+                className={`font-semibold text-[17px] text-gray-600 ${
                   pathName === "/page/about"
                     ? "text-green-800 font-bold underline"
                     : ""
@@ -49,7 +55,7 @@ const Header = () => {
               </Link>
               <Link
                 href="/page/blog"
-                className={` font-semibold text-2xl text-gray-600 ${
+                className={` font-semibold text-[17px] text-gray-600 ${
                   pathName === "/page/blog"
                     ? "text-green-800 font-bold underline"
                     : ""
@@ -63,7 +69,7 @@ const Header = () => {
           {/* Mobile Menu Toggle Button */}
           <button
             onClick={() => setShowNav(!showNav)}
-            className="md:hidden inline"
+            className="md:hidden inline cursor-pointer"
           >
             {showNav ? <LiaTimesSolid size={25} /> : <FaBars size={25} />}
           </button>
@@ -73,19 +79,22 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div className="md:hidden">
         <div
-          className={`fixed left-0 top-16 z-20 w-52 p-10 bg-white transition-transform duration-500 ease-in-out ${
+          className={`fixed left-0 top-16 z-20 w-full p-10 bg-white transition-transform duration-500 ease-in-out ${
             showNav ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <nav>
             <ul className="flex flex-col gap-4 text-[18px]">
-              <Link href="/page/ourservice" className="text-2xl">
+              <Link  href="/"  onClick={() => setShowNav(false)} className="text-2xl">
+                Home
+              </Link>
+              <Link href="/page/ourservice"  onClick={() => setShowNav(false)} className="text-2xl">
                 Service
               </Link>
-              <Link href="/page/about" className="text-2xl">
+              <Link href="/page/about"  onClick={() => setShowNav(false)} className="text-2xl">
                 About us
               </Link>
-              <Link href="/page/blog" className="text-2xl">
+              <Link href="/page/blog"  onClick={() => setShowNav(false)} className="text-2xl">
                 Blog
               </Link>
             </ul>

@@ -46,7 +46,7 @@ const NewsLetter = () => {
           />
           <button
             type="submit"
-            className="bg-black text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 hover:text-white transition-all duration-300 md:w-full w-32 sm:w-auto"
+            className="bg-black text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 hover:text-white transition-all duration-300  w-32 sm:w-auto"
           >
             Subscribe
           </button>
