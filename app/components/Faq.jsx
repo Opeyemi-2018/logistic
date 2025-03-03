@@ -19,9 +19,9 @@ const faqs = [
       "We boost brand visibility, attract the right audience, and drive growth through strategic advertising and digital marketing.",
   },
   {
-    question: "What types of visas do you assist with?",
+    question: "What types of visa do you assist with?",
     answer:
-      "We handle tourist, business, work, student, and transit visas, ensuring a smooth application process.",
+      "We handle  sponsorship, tourist, business, work, student, and transit visas, ensuring a smooth application process.",
   },
   {
     question: "How do I contact customer support?",
