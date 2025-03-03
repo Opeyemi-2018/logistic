@@ -66,7 +66,7 @@ const OurService = () => {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold text-center mb-10">We Offer</h2>
+        <h2 className="text-3xl font-bold text-center mb-10">We Offers</h2>
         <div className="relative border-l-4 border-green-800">
           {services.map((service, index) => (
             <div key={index} className="ml-6 mb-10">
