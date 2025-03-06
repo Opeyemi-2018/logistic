@@ -61,12 +61,12 @@ const OurService = () => {
         }}
       >
         <div className="md:text-5xl capitalize text-3xl max-w-6xl mx-auto text-white md:mt-40 mt-32 font-semibold">
-          Our <span className="text-green-950 bg-white px-2">Service</span>
+          Our <span className="text-green-950 bg-white px-2">Services</span>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold text-center mb-10">We Offers</h2>
+        <h2 className="text-3xl font-bold text-center mb-10">We Offer</h2>
         <div className="relative border-l-4 border-green-800">
           {services.map((service, index) => (
             <div key={index} className="ml-6 mb-10">
@@ -79,7 +79,7 @@ const OurService = () => {
                     priority
                     width={600}
                     height={600}
-                    className=" object-contain"
+                    className="object-contain"
                   />
                 </div>
                 <div>

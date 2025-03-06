@@ -17,7 +17,7 @@ const Header = () => {
         <div className="max-w-6xl mx-auto px-3 flex items-center justify-between">
           <Link href="/">
             <Image
-              src="/images/delak-logo.jpeg"
+              src="/images/logo.png"
               alt="Delak Logo"
               width={80}
               height={80}
@@ -85,16 +85,32 @@ const Header = () => {
         >
           <nav>
             <ul className="flex flex-col gap-4 text-[18px]">
-              <Link  href="/"  onClick={() => setShowNav(false)} className="text-2xl">
+              <Link
+                href="/"
+                onClick={() => setShowNav(false)}
+                className="text-2xl"
+              >
                 Home
               </Link>
-              <Link href="/page/ourservice"  onClick={() => setShowNav(false)} className="text-2xl">
+              <Link
+                href="/page/ourservice"
+                onClick={() => setShowNav(false)}
+                className="text-2xl"
+              >
                 Service
               </Link>
-              <Link href="/page/about"  onClick={() => setShowNav(false)} className="text-2xl">
+              <Link
+                href="/page/about"
+                onClick={() => setShowNav(false)}
+                className="text-2xl"
+              >
                 About us
               </Link>
-              <Link href="/page/blog"  onClick={() => setShowNav(false)} className="text-2xl">
+              <Link
+                href="/page/blog"
+                onClick={() => setShowNav(false)}
+                className="text-2xl"
+              >
                 Blog
               </Link>
             </ul>

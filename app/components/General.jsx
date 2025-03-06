@@ -7,15 +7,17 @@ const General = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
-    <div ref={ref} className="px-3 max-w-6xl mx-auto pt-5 pb-10 overflow-hidden">
+    <div
+      ref={ref}
+      className="px-3 max-w-6xl mx-auto pt-5 pb-10 overflow-hidden"
+    >
       <div className="flex justify-between md:flex-row flex-col md:gap-6 gap-0 items-center mt-10">
         {/* Image sliding in from the right */}
         <motion.div
-  initial={{ x: "-50%", opacity: 0 }} // Reduced from -100%
-  animate={inView ? { x: 0, opacity: 1 } : {}}
-  transition={{ duration: 0.6, ease: "easeInOut" }}
->
-
+          initial={{ x: "-50%", opacity: 0 }} // Reduced from -100%
+          animate={inView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
           <Image
             src="/images/log-2.jpg"
             width={800}
@@ -57,9 +59,9 @@ const General = () => {
                 Global trade relies on seamless import and export operations.
                 Businesses must navigate customs, logistics, and international
                 regulations while ensuring efficient supply chain management.
-                Whether dealing with heavy machinery or consumer goods, a robust
-                trade strategy leads to economic growth and global market
-                expansion.
+                Whether dealing with heavy machinery or consumer goods, we map
+                out effective trade strategies that help in area of economic
+                growth and global market expansion
               </p>
             </div>
 
@@ -76,7 +78,7 @@ const General = () => {
               </motion.p>
               <p className="text-gray-700">
                 A strong marketing and distribution strategy is the backbone of
-                successful sales. Businesses utilize digital marketing, targeted
+                successful sales. at DELAK we ensure digital marketing, targeted
                 advertising, and efficient sales channels to connect with
                 consumers. Expanding both locally and internationally requires
                 data-driven decision-making and innovative customer engagement

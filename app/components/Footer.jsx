@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -7,7 +8,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-bold">Delak</h2>
+          <Link href="/" className="text-2xl font-bold">
+            Delak
+          </Link>
           <p className="mt-2 text-gray-400">
             Delivering seamless logistics solutions with efficiency and
             reliability.
@@ -17,35 +20,30 @@ const Footer = () => {
         {/* Links */}
         <div>
           <h3 className="text-xl font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="hover:text-green-400">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-green-400">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-green-400">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-green-400">
-                Contact
-              </a>
-            </li>
+          <ul className="flex flex-col md:gap-3 gap-2">
+            <Link href="/" className="hover:text-green-400">
+              Home
+            </Link>
+
+            <Link href="/page/ourservice" className="hover:text-green-400">
+              Services
+            </Link>
+
+            <Link href="/page/about" className="hover:text-green-400">
+              About Us
+            </Link>
+
+            <Link href="/page/blog" className="hover:text-green-400">
+              Blog
+            </Link>
           </ul>
         </div>
 
         {/* Contact & Socials */}
         <div>
           <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
-          <p className="text-gray-400">Email: info@delak.com</p>
-          <p className="text-gray-400">Phone: +123 456 7890</p>
+          <p className="text-gray-400">Email: delakglobalsynergy@gmail.com</p>
+          <p className="text-gray-400">Phone: +33758332017</p>
           <div className="flex justify-center md:justify-start gap-4 mt-4">
             <a href="#" className="hover:text-green-400">
               <FaFacebook size={20} />
