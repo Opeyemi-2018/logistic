@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto flex md:flex-row flex-col gap-4 my-8">
+    <div className="max-w-6xl mx-auto flex md:flex-row px-3 flex-col gap-4 my-8">
       <div className="md:px-0 px-3">
         <h1 className="sm:text-2xl text-1xl font-bold underline text-green-800 capitalize">
           get in touch with us
@@ -51,7 +51,7 @@ const Contact = () => {
           <HiOutlineLocationMarker size={30} className="text-green-800 bg-gray-100 p-2 rounded-full" />
           <div>
             <h1 className="font-semibold ">Our office address</h1>
-            <p className="text-gray-600">2 Attwool street, Parapo Community, Awoyaya, Lagos Nigeria</p>
+            <p className="text-gray-600">No2 Attwool School Street, Awoyaya, Ibeju-lekki L.G.A. Lagos State</p>
           </div>
         </div>
         <div className="flex items-center gap-3 my-4">
@@ -65,8 +65,8 @@ const Contact = () => {
           <MdOutlineLocalPhone size={30} className="text-green-800 bg-gray-100 p-2 rounded-full" />
           <div>
             <h1 className="font-semibold ">Phone</h1>
-            <p className="text-gray-600">+33758332017</p>
-            <p className="text-gray-600">+2347055772775</p>
+            <p className="text-gray-600">++33 7 58 33 20 17</p>
+            <p className="text-gray-600">+234 705 577 2775</p>
           </div>
         </div>
       </div>
