@@ -43,10 +43,10 @@ const General = () => {
       <div className="p-6">
         <div className="p-6">
           {/* Timeline Container */}
-          <div className="border-l-4 border-green-500 pl-4">
+          <div className="border-l-4 border-green-800 pl-4">
             {/* Importation and Exportation Section */}
             <div className="relative">
-              <div className="absolute w-4 h-4 bg-green-500 rounded-full -left-6 top-0"></div>
+              <div className="absolute w-4 h-4 bg-green-800 rounded-full -left-6 top-0"></div>
               <motion.p
                 initial={{ x: "100%", opacity: 0 }}
                 animate={inView ? { x: 0, opacity: 1 } : {}}
@@ -67,7 +67,7 @@ const General = () => {
 
             {/* Marketing, Distribution, and Sales Section */}
             <div className="relative mt-6">
-              <div className="absolute w-4 h-4 bg-green-500 rounded-full -left-6 top-0"></div>
+              <div className="absolute w-4 h-4 bg-green-800 rounded-full -left-6 top-0"></div>
               <motion.p
                 initial={{ x: "100%", opacity: 0 }}
                 animate={inView ? { x: 0, opacity: 1 } : {}}
@@ -78,7 +78,7 @@ const General = () => {
               </motion.p>
               <p className="text-gray-700">
                 A strong marketing and distribution strategy is the backbone of
-                successful sales. at DELAK we ensure digital marketing, targeted
+                successful sales. At DELAK we ensure digital marketing, targeted
                 advertising, and efficient sales channels to connect with
                 consumers. Expanding both locally and internationally requires
                 data-driven decision-making and innovative customer engagement

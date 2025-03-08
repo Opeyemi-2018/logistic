@@ -31,7 +31,7 @@ const Contact = () => {
 
       if (response.ok) {
         setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", contact: "", message: "" }); // Clear form
+        setFormData({ name: "", email: "", contact: "", message: "" }); 
       } else {
         setStatus("Error sending message. Try again later.");
       }
@@ -46,15 +46,12 @@ const Contact = () => {
         <h1 className="sm:text-2xl text-1xl font-bold underline text-green-800 capitalize">
           get in touch with us
         </h1>
-        <p className="text-gray-600 mb-2">
-          Contact us with your house details if you have a house to sell for us.
-        </p>
-
+      
         <div className="flex items-center gap-3 mb-2">
           <HiOutlineLocationMarker size={30} className="text-green-800 bg-gray-100 p-2 rounded-full" />
           <div>
             <h1 className="font-semibold ">Our office address</h1>
-            <p className="text-gray-600">1234 Business St, City, Country</p>
+            <p className="text-gray-600">2 Attwool street, Parapo Community, Awoyaya, Lagos Nigeria</p>
           </div>
         </div>
         <div className="flex items-center gap-3 my-4">
@@ -69,6 +66,7 @@ const Contact = () => {
           <div>
             <h1 className="font-semibold ">Phone</h1>
             <p className="text-gray-600">+33758332017</p>
+            <p className="text-gray-600">+2347055772775</p>
           </div>
         </div>
       </div>
