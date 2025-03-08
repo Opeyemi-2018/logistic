@@ -43,7 +43,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
           <p className="text-gray-400">Email: delakglobalsynergy@gmail.com</p>
-          <p className="text-gray-400">Phone: +33758332017</p>
+          <p className="text-gray-400">Phone: +33758332017, +234 705 577 2775</p>
           <div className="flex justify-center md:justify-start gap-4 mt-4">
             <a href="#" className="hover:text-green-400">
               <FaFacebook size={20} />
