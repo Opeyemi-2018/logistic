@@ -51,7 +51,7 @@ const Contact = () => {
           <HiOutlineLocationMarker size={30} className="text-green-800 bg-gray-100 p-2 rounded-full" />
           <div>
             <h1 className="font-semibold ">Our office address</h1>
-            <p className="text-gray-600">No2 Attwool School Street, Awoyaya, Ibeju-lekki L.G.A. Lagos State</p>
+            <p className="text-gray-600">No2 Attwool School Street, Awoyaya, Ibeju-lekki L.G.A. Lagos State, Nigeria</p>
           </div>
         </div>
         <div className="flex items-center gap-3 my-4">
