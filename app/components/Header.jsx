@@ -17,7 +17,7 @@ const Header = () => {
         <div className="max-w-6xl mx-auto px-3 flex items-center justify-between">
           <Link href="/">
             <Image
-              src="/images/logo.png"
+              src="/images/del-logo.png"
               alt="Delak Logo"
               width={80}
               height={80}
@@ -79,7 +79,7 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div className="md:hidden">
         <div
-          className={`fixed left-0 top-16 z-20 w-full p-10 bg-white transition-transform duration-500 ease-in-out ${
+          className={`fixed left-0  z-20 w-full p-10 bg-white transition-transform duration-500 ease-in-out ${
             showNav ? "translate-x-0" : "-translate-x-full"
           }`}
         >
