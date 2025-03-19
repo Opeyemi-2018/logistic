@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="relative">
       {/* Desktop Navigation */}
-      <div className="fixed top-0 w-full z-20 bg-white shadow-lg">
+      <div className="fixed top-0 w-full z-40 bg-white shadow-lg">
         <div className="max-w-6xl mx-auto px-3 flex items-center justify-between">
           <Link href="/">
             <Image
@@ -79,7 +79,7 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div className="md:hidden">
         <div
-          className={`fixed left-0  z-20 w-full p-10 bg-white transition-transform duration-500 ease-in-out ${
+          className={`fixed left-0 top-[9%] z-20 w-full p-10 bg-white transition-transform duration-500 ease-in-out ${
             showNav ? "translate-x-0" : "-translate-x-full"
           }`}
         >
